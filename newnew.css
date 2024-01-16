@@ -24,7 +24,7 @@ body {
 }
 
 
-.img {
+.image {
   padding:3px;
   background-color:#FFBF00;
   position:absolute;
@@ -80,8 +80,21 @@ h2{
   height:300px;
   border-radius:25px;
   position:absolute;
-  top:800px;
+  top:650px;
+  
+  transition: transform 0.4s ease;
+  display:flex;
+  justify-content:center;
 }
+
+.text_2:nth-of-type(even){
+    transform: translate(-400%);
+}
+.text_2.show{
+    transform: translateX(0);
+}
+
+
 
 .desc2{
   margin:60px;
@@ -110,7 +123,7 @@ h2{
 footer{
   margin:0px;
   padding:10px;
-  margin-top:1250px;
+  margin-top:1100px;
   background-color:#252426;
   border-radius:5px;
 }

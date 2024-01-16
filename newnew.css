@@ -80,8 +80,7 @@ h2{
   height:300px;
   border-radius:25px;
   position:absolute;
-  top:650px;
-  
+  top:800px;
   transition: transform 0.4s ease;
   display:flex;
   justify-content:center;
@@ -123,7 +122,7 @@ h2{
 footer{
   margin:0px;
   padding:10px;
-  margin-top:1100px;
+  margin-top:1350px;
   background-color:#252426;
   border-radius:5px;
 }

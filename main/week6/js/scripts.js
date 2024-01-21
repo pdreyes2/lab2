@@ -28,9 +28,10 @@ function newPageBtn(nPBtn, path){
 // Checks if html file has "ref_page", no check will create errors and program will not execute
 if (document.getElementById("ref_page")){
 
-  newPageBtn("back_btn", "../index.html")
+  newPageBtn("ref_page", "../index.html")
 
   slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+
 
 }
 
@@ -40,8 +41,7 @@ else{
 
   slideAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)")
 
-  newPageBtn("keyboard_btn","https://drive.google.com/drive/folders/1p-OC0BzzxXcnwLKWmhRdDgvViCP2gyys?usp=drive_link")
-
+  
 }
 
 

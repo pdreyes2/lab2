@@ -16,6 +16,8 @@ body{
 }
 
 
+/* Headers */
+
 .header
 {
     font-family: 'Montserrat', sans-serif;
@@ -86,7 +88,7 @@ body{
     width:55px;
 }
 
-
+/* Main page */
 
 .main_content{
     margin-right:10%;
@@ -205,17 +207,59 @@ body{
     transition: transform 0.5s ease-in-out;
 }
 
-.keyboardLink{
-    display: flex;
-    border-radius: 15px;
-    background-color:#1e1d1f;
-    margin:2%;
-    padding:1%;
+
+.keyboardPage img{
     height:auto;
-    width:10%;
+    width:100%;
 }
 
+
+
+
+
+
+
+
+/* Keyboard page */
+
+.keyboardComms{
+
+    padding:3%;
+    height:auto;
+    width:100%;
+    justify-content: space-around;
+}
+
+.keyboardComms img{
+
+    border-style:solid;
+    border-color:#1e1d1f;
+    border-radius:15px;
+    margin:3%;
+    height:auto;
+    width:25%;
+}
+
+
+.keyboardPage_bottom{
+    color:#F3E8EE;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    align-self:center;
+    background-color:#1e1d1f;
+    border-radius: 15px;
+
+    height:auto;
+    width:20%;
+}
+
+
+
+
 .keyboardLink img{
+    margin:5%;
+    background-color:#F3E8EE;
+    border-radius:15px;
     padding:1%;
     height:auto;
     width:70px;
@@ -224,11 +268,11 @@ body{
 
 
 
-footer{
-    text-align:center;
-    font-family: 'Fira Sans', Verdana, Arial, sans-serif;
-}
 
+
+
+
+/* References page */
 
 .references{
     display:flex;
@@ -247,4 +291,13 @@ footer{
     border-radius:25px;
 
     align-self:center;
+}
+
+
+/* footer */
+
+footer{
+    margin-top:5%;
+    text-align:center;
+    font-family: 'Fira Sans', Verdana, Arial, sans-serif;
 }

@@ -199,9 +199,27 @@ body{
     border-radius: 10px;
     height:auto;
     width:40%;
-    
+
+
     transform: translateX(400%);
     transition: transform 0.5s ease-in-out;
+}
+
+.keyboardLink{
+    display: flex;
+    border-radius: 15px;
+    background-color:#1e1d1f;
+    margin:2%;
+    padding:1%;
+    height:auto;
+    width:10%;
+}
+
+.keyboardLink img{
+    padding:1%;
+    height:auto;
+    width:70px;
+    cursor:pointer;
 }
 
 
@@ -220,6 +238,7 @@ footer{
 
 
 .references_text{
+    font-family: 'Montserrat', sans-serif;
     margin:1%;
     padding:4%;
     font-size:300%;

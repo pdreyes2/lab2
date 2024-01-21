@@ -40,6 +40,8 @@ else{
 
   slideAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)")
 
+  newPageBtn("keyboard_btn","https://drive.google.com/drive/folders/1p-OC0BzzxXcnwLKWmhRdDgvViCP2gyys?usp=drive_link")
+
 }
 
 

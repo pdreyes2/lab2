@@ -1,36 +1,45 @@
-if (document.getElementById("back_btn")){
-  document.getElementById("back_btn").addEventListener("click", function(){
-    console.log("Button clicked!");
-    var openback = "../index.html"
-  
-    window.location.href= openback;
-  });
+// Functions
 
-  document.getElementById("links").addEventListener("click", function(){
-    var linksContainer = document.getElementById("links_container");
+function slideAnimate(buttonID, showID, tx1, tx2)
+{
+var animate = document.getElementById(buttonID);
+var isOpened = false;
+document.getElementById(showID).addEventListener("click", function(){
+    
+    isOpened = !isOpened;
 
-
-    linksContainer.style.transform = linksContainer.style.transform === "translateX(400%)" ? "translateX(-110%)" : "translateX(400%)";
+    animate.style.transform = isOpened ? tx1 : tx2;
 
 });
 }
 
+function newPageBtn(nPBtn, path){
+  document.getElementById(nPBtn).addEventListener("click", function(){
+    var open = path;
+
+    window.location.href = open;
+  });
+
+}
+
+
+// Codes for index && ref HTMLs
+
+// Checks if html file has "ref_page", no check will create errors and program will not execute
+if (document.getElementById("ref_page")){
+
+  newPageBtn("back_btn", "../index.html")
+
+  slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+
+}
+
 else{
 
-document.getElementById("links").addEventListener("click", function(){
-    var linksContainer = document.getElementById("links_container");
+  slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
 
+  slideAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)")
 
-    linksContainer.style.transform = linksContainer.style.transform === "translateX(400%)" ? "translateX(-110%)" : "translateX(400%)";
-
-});
-
-
-document.getElementById("showsecText").addEventListener("click", function(){
-    var secText = document.getElementById("secText");
-
-    secText.style.transform = secText.style.transform === "translateX(400%)" ? "translateX(0%)" : "translateX(400%)";
-});
 }
 
 

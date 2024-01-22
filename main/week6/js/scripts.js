@@ -23,25 +23,33 @@ function newPageBtn(nPBtn, path){
 }
 
 
-// Codes for index && ref HTMLs
+// Codes for HTMLs
 
-// Checks if html file has "ref_page", no check will create errors and program will not execute
-if (document.getElementById("ref_page")){
+// Checks which html is currently on, no check will create errors and program will not execute
+if (document.getElementById("back_btn")){
 
-  newPageBtn("ref_page", "../index.html")
+  newPageBtn("back_btn", "../index.html")
 
   slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
-
-
 }
 
-else{
+
+else if (document.getElementById("home_page")){
+
+  
 
   slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
 
   slideAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)")
+}
 
-  
+
+else{
+  newPageBtn("ref_page", "../index.html")
+
+  slideAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+
+  slideAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)")
 }
 
 

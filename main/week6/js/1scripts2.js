@@ -15,6 +15,8 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
       window.location.href = path;
     });
   }
+
+  
   
   // Check which HTML page is currently on
   const currentPageId = document.body.id;
@@ -33,5 +35,37 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
     default:
       newPageBtn("back_btn", "../index.html");
       toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+
+
+      /*modal*/
+
+      var keebElements = document.querySelectorAll('.keeb');
+      var modal = document.getElementById("modalImage");
+
+      // Function for clicking keeb class
+      function modalClick() {
+      var modal = document.getElementById("modalImage");
+      var modalImg = document.getElementById("modals");
+
+      modalImg.src = this.src;
+      modal.style.display = "block";
+      }
+
+      keebElements.forEach(function (element) {
+      element.addEventListener('click', modalClick);
+      });
+
+      // Modal closer
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function () {
+      modal.style.display = "none";
+      };
+
+      /*modal end*/
+
       break;
   }
+
+
+
+

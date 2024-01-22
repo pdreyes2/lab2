@@ -29,6 +29,7 @@ body{
 }
 
 .top_left_head{
+    text-shadow: 1px 3px 3px black;
     align-self:center;
     margin-right:24%;
     color:#FFBF00;
@@ -44,6 +45,7 @@ body{
 }
 
 .show_links{
+    text-shadow: 1px 1px 1.4px black;
     font-family: 'Fira Sans', Verdana, Arial, sans-serif;
     text-align:center;
     color:#2E2C2F;
@@ -91,6 +93,7 @@ body{
 /* Main page */
 
 .main_content{
+    text-shadow: 1px 1px 3px black;
     margin-right:10%;
     display:flex;
     justify-content:center;
@@ -114,6 +117,7 @@ body{
 
 
 .image{
+    box-shadow: 1px 3px 3px black;
     max-width:30%;
     height:auto;
     margin-top:8%;
@@ -158,6 +162,8 @@ body{
 }
 
 
+/* Main Bottom */
+
 
 .horizontal_sst{
     margin-top:4%;
@@ -169,6 +175,8 @@ body{
 }
 
 .show_sec_text{
+    box-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 1.4px black;
     margin-top:1%;
     margin-bottom:1%;
     align-self:center;
@@ -188,10 +196,13 @@ body{
 }
 
 .sec_text p{
+    
     font-family: 'Fira Sans', Verdana, Arial, sans-serif;
 }
 
 .sec_text{
+    box-shadow: 1px 1px 10px black;
+    /*text-shadow: 0.8px 0 1px black;*/
     align-self: center;
     margin:5%;
     padding:1%;
@@ -209,6 +220,7 @@ body{
 
 
 .keyboardPage img{
+    box-shadow: 1px 3px 4px black;
     height:auto;
     width:100%;
     border-radius:10px;
@@ -226,7 +238,7 @@ body{
 /* Keyboard page */
 
 .keyboardComms{
-
+    
     padding:3%;
     height:auto;
     width:100%;
@@ -234,7 +246,7 @@ body{
 }
 
 .keyboardComms img{
-
+    box-shadow: 1px 1px 15px #1e1d1f;
     border-style:solid;
     border-color:#1e1d1f;
     border-radius:15px;
@@ -245,6 +257,8 @@ body{
 
 
 .keyboardPage_bottom{
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
     color:#F3E8EE;
     font-family: 'Montserrat', sans-serif;
     text-align:center;
@@ -260,6 +274,7 @@ body{
 
 
 .keyboardLink img{
+    box-shadow: 1px 1px 8px black;
     margin:5%;
     background-color:#F3E8EE;
     border-radius:15px;
@@ -300,6 +315,7 @@ body{
 /* footer */
 
 footer{
+    text-shadow: 1px 1px 1px #1e1d1f;
     margin-top:5%;
     text-align:center;
     font-family: 'Fira Sans', Verdana, Arial, sans-serif;

@@ -42,7 +42,7 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
       var keebElements = document.querySelectorAll('.keeb');
       var modal = document.getElementById("modalImage");
 
-      // Function for clicking keeb class
+      // Function for clicking every keyboard pics
       function modalClick() {
       var modal = document.getElementById("modalImage");
       var modalImg = document.getElementById("modals");

@@ -29,10 +29,10 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
   
     case "home_page":
       toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
-      toggleAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)");
+      //toggleAnimate("secText_container", "secTextButton", "translateX(0%)", "translateX(400%)");
       break;
-  
-    default:
+    
+    case "keyboard_page":
       newPageBtn("back_btn", "../index.html");
       toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
 
@@ -63,8 +63,39 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
 
       /*modal end*/
 
+      default:
+      newPageBtn("back_btn", "../index.html");
+      toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+
       break;
   }
+
+
+
+
+
+// TEST TEST
+
+const text2 = document.querySelectorAll('.sec_text')
+
+window.addEventListener('scroll', checkAnimation)
+
+function checkAnimation(){
+    const triggerBottom = (window.innerHeight / 1.2)
+
+    text2.forEach(text => {
+        const text2Top = text.getBoundingClientRect().top
+
+        if(text2Top<triggerBottom){
+            text.classList.add('show')
+        }else{
+            text.classList.remove('show')
+        }
+
+    })
+
+    
+}
 
 
 

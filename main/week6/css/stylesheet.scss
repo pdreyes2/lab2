@@ -72,7 +72,7 @@ body{
     padding:5px;
     height:auto;
     width:auto;
-    background-color:#F3E8EE;
+    background-color:rgb(15, 15, 15);
     border-radius:15px;
     top:2.25%;
     position:absolute;
@@ -166,23 +166,25 @@ body{
 
 
 .horizontal_sst{
-    margin-top:4%;
-    height:100%;
+    margin-top:50%;
+    height:110%;
     width:100%;
     background-color:#1e1d1f;
     display:flex;
     justify-content: center;
+    position:absolute;
 }
 
+ 
 .show_sec_text{
     box-shadow: 1px 1px 10px black;
     text-shadow: 1px 1px 1.4px black;
     margin-top:1%;
     margin-bottom:1%;
-    align-self:center;
+    
     font-family: 'Montserrat', sans-serif;;
     color:#2E2C2F;
-    height:auto;
+    height:7%;
     width:15%;
     background-color:#FFBF00;
     text-align:center;
@@ -195,16 +197,19 @@ body{
     
 }
 
+
 .sec_text p{
     
     font-family: 'Fira Sans', Verdana, Arial, sans-serif;
 }
 
 .sec_text{
+
+    margin-top:8%;
     box-shadow: 1px 1px 10px black;
     /*text-shadow: 0.8px 0 1px black;*/
     align-self: center;
-    margin:5%;
+    
     padding:1%;
     font-family: 'Montserrat', sans-serif;
     background-color:#ffffff;
@@ -213,9 +218,32 @@ body{
     height:auto;
     width:40%;
 
-
     transform: translateX(400%);
     transition: transform 0.5s ease-in-out;
+}
+
+
+/* TESTING TESTING */
+.sec_text:nth-of-type(even){
+    transform: translate(-400%);
+}
+.sec_text.show{
+    transform: translateX(0);
+}
+/* TESTING TESTING */
+
+
+.gamingPage img{
+    box-shadow: 2px 3px 6px black;
+    margin-top:0%;
+    margin-left:35%;
+    margin-right:35%;
+    padding:5%;
+    height:auto;
+    width:20%;
+    border-radius:10px;
+
+
 }
 
 
@@ -331,23 +359,23 @@ footer{
 
 
 
-/* modal shit */
+/* modal stuff */
 
 
 
 /* The Modal (background) */
 .modals {
-  display: none; /* Hidden by default */
-  position: fixed;  /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed;  
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
 }
 
 /* Modal Content (image) */
@@ -402,3 +430,49 @@ footer{
     width: 100%;
   }
 }
+
+
+
+
+
+
+/* gaming_page stuff */
+
+.vid1{
+    align-self:center;
+    margin:2.5%;
+    margin-bottom:1%;
+}
+.vid1 video{
+    border-style:double;
+    border-color:#1e1d1f;
+    border-radius:12px;
+    box-shadow: 2px 3px 8px black;
+}
+
+.playlistLink{
+    margin-top: 2.5%;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    text-shadow: 0.5px 0.2px 1px black;
+    align-self: center;
+    
+    padding:1%;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ffffff;
+    color:#2E2C2F;
+    border-radius: 10px;
+    height:auto;
+    width:auto;
+}
+
+.playlistLink a:link{
+    text-decoration:none;
+}
+.playlistLink a:visited{
+    text-decoration:none;
+    color:#2E2C2F
+}
+
+

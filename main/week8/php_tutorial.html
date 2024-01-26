@@ -62,7 +62,35 @@ localVarTest();
 localVarTest();
 localVarTest();
 
+echo "<br>";
 
+
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message(){
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
+$myCar = new Car("red", "Volvo");
+var_dump($myCar);
+
+echo "<br>";
+$myCar = new Car("blue", "Toyota");
+var_dump($myCar);
+
+echo "<br>";
+$lenTest = "count length";
+echo strlen("lenTest");
+echo "<br>";
+echo str_word_count("lenTest");
+echo "<br>";
+echo strpos("$lenTest", "length");
 
 
 

@@ -3,10 +3,10 @@
 <head>
 <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-<body>  
+<body id="php-sample">  
 
 <div class="header">
-        <h2 class="top_left_head">VON'S PERSONAL WEBPAGE</h2>
+        <h2 class="top_left_head" id="back_btn">VON'S PERSONAL WEBPAGE</h2>
         <img class ="gitlogo" src="https://cdn.worldvectorlogo.com/logos/git-bash.svg">
         <div class="show_links" id="links">
         
@@ -142,5 +142,6 @@ echo "<br>";
 echo $gender;
 ?>
 
+<script src="js/1scripts2.js"></script>
 </body>
 </html>

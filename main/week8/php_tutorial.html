@@ -31,6 +31,41 @@ echo "<br>" . "variable x + variable z is: " . $x + $z;
 
 $a = $b = $c = 33.33;
 echo "<br>" . $a + $b + $c;
+
+function testFunction()
+{
+  echo "<p>Variable x inside function is: $x</p>"; //error since global variable cannot be used inside here
+}
+  testFunction();
+  echo "<p>Variable x outside function is: $x</p>";
+
+function testFunction2(){
+$d = 5; // local
+echo "<p>Variable d inside function is: $d</p>";
+}
+testFunction2();
+
+echo "<p>Variable d outside function is: $d</p>";
+
+
+// local variable test
+
+function localVarTest(){
+  static $e = 0;
+  echo $e;
+  $e++;
+  echo "<br>";
+  var_dump($e);
+}
+
+localVarTest();
+localVarTest();
+localVarTest();
+
+
+
+
+
 ?>
 
 

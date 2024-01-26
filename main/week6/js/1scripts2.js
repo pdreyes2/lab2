@@ -60,10 +60,16 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
       span.onclick = function () {
       modal.style.display = "none";
       };
+      break;
 
       /*modal end*/
+    case "valentines":
+      newPageBtn("back_btn", "../index.html");
+      toggleAnimate("vtextContainer", "yesButton", "translateX(0)", "translateX(400%)");
+      toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
+      break;
 
-      default:
+    default:
       newPageBtn("back_btn", "../index.html");
       toggleAnimate("links_container", "links", "translateX(-110%)", "translateX(400%)");
 

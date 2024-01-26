@@ -475,4 +475,62 @@ footer{
     color:#2E2C2F
 }
 
+/* valentines */
 
+.valentines{
+    text-shadow:3px 3px 3px black;
+    align-self:center;
+    height:auto;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom:5%;
+    text-align: center;
+    color:#F3E8EE;
+    font-size:50px;
+    font-family: 'Montserrat', sans-serif;
+
+    border-radius:15px;
+    background: #1e1d1f;
+
+}
+
+
+.ybutton{
+    text-shadow:1px 1px 3px black;
+    color:#1e1d1f;
+    background-color: #FFBF00;
+    height:auto;
+    width:10%;
+    margin-bottom:5%;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+.seeYou{
+    position:absolute;
+    text-shadow:3px 3px 3px black;
+    align-self:center;
+    padding:4%;
+    height:auto;
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom:5%;
+    text-align: center;
+    color:#1e1d1f;
+    font-size:50px;
+    font-family: 'Montserrat', sans-serif;
+
+    border-radius:15px;
+    background: #F3E8EE; 
+
+    transform: translateX(400%);
+    transition: transform 0.5s ease-in-out;
+
+
+}

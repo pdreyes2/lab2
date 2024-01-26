@@ -107,8 +107,20 @@ echo "<br>";
 $concatenate = $y . " " . $lenTest;
 echo $concatenate;
 
+echo "<p>Test for escape character, \"illegal\" strings</p>";
 
+echo "<br>";
+echo(rand(10,100));
+echo "<br>";
+define("TESTING", "This is a test phrase for the \"define\" function");
+echo TESTING;
+echo "<br>";
 
+function testfuncDefine(){
+  echo TESTING;
+}
+
+testfuncDefine();
 ?>
 
 

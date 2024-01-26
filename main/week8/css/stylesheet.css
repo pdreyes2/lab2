@@ -1,0 +1,501 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:500);
+
+
+
+
+
+body{
+    overflow-x:hidden;
+    background-color: #2E2C2F;
+    display:flex;
+    flex-direction:column;
+    /*border-style:solid;
+    border-color:black;*/
+    
+}
+
+
+/* Headers */
+
+.header
+{
+    font-family: 'Montserrat', sans-serif;
+    height:100%;
+    width:100%;
+    background-color:#1e1d1f;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.top_left_head{
+    text-shadow: 1px 3px 3px black;
+    align-self:center;
+    margin-right:24%;
+    color:#FFBF00;
+    font-size:180%;
+    cursor:pointer;
+}
+
+.gitlogo
+{
+    height:auto;
+    width:60px;
+    margin-right:37.5%;
+}
+
+.show_links{
+    text-shadow: 1px 1px 1.4px black;
+    font-family: 'Fira Sans', Verdana, Arial, sans-serif;
+    text-align:center;
+    color:#2E2C2F;
+    background-color:#FFBF00;
+    border-radius:20px;
+    width:10%;
+    align-self:flex-end;
+    margin-top:1%;
+    margin-right:1%;
+    margin-bottom:1%;
+
+    user-select: none;
+    cursor:pointer;
+    
+}
+
+
+
+.links_container{
+    display:flex;
+    flex-direction:row;
+    align-self:flex-end;
+    justify-content: space-around;
+    padding:5px;
+    height:auto;
+    width:auto;
+    background-color:rgb(15, 15, 15);
+    border-radius:15px;
+    top:2.25%;
+    position:absolute;
+
+    transform: translateX(400%);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+.links_container img{
+
+    padding:5px;
+    height:auto;
+    width:55px;
+}
+
+/* Main page */
+
+.main_content{
+    text-shadow: 1px 1px 3px black;
+    margin-right:10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*border-style:solid;
+    border-color:red;*/
+
+}
+
+
+
+.main_text{
+    font-family: 'Montserrat', sans-serif;
+    /*border-style:solid;
+    border-color:black;*/
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+}
+
+
+.image{
+    box-shadow: 1px 3px 3px black;
+    max-width:30%;
+    height:auto;
+    margin-top:8%;
+    margin-left:10%;
+    margin-right:4.5%;
+    margin-bottom:10%;
+    padding:3px;
+    background-color:#FFBF00;
+    border-radius:15px;
+}
+
+
+.main_text{
+    margin-right:0%;
+    /*border-style:solid;
+    border-color:black; */
+}
+
+
+.main_head h1{
+    /*border-style:solid;
+    border-color:black;*/
+    color:#FFBF00;
+}
+
+
+.sub_head{
+    color:#F3E8EE;
+    /*border-style:solid;
+    border-color:black;*/
+}
+.main_desc{
+    text-align:justify;
+    color:#F3E8EE;
+}
+
+
+
+
+.main_head{
+    color:#FFBF00;
+}
+
+
+/* Main Bottom */
+
+
+.horizontal_sst{
+    margin-top:50%;
+    height:110%;
+    width:100%;
+    background-color:#1e1d1f;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+}
+
+ 
+.show_sec_text{
+    box-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 1.4px black;
+    margin-top:1%;
+    margin-bottom:1%;
+    
+    font-family: 'Montserrat', sans-serif;;
+    color:#2E2C2F;
+    height:7%;
+    width:15%;
+    background-color:#FFBF00;
+    text-align:center;
+    /*border-style:solid;
+    border-color:red;*/
+    border-radius:15px;
+
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+
+.sec_text p{
+    
+    font-family: 'Fira Sans', Verdana, Arial, sans-serif;
+}
+
+.sec_text{
+
+    margin-top:8%;
+    box-shadow: 1px 1px 10px black;
+    /*text-shadow: 0.8px 0 1px black;*/
+    align-self: center;
+    
+    padding:1%;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ffffff;
+    color:#2E2C2F;
+    border-radius: 10px;
+    height:auto;
+    width:40%;
+
+    transform: translateX(400%);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* TESTING TESTING */
+.sec_text:nth-of-type(even){
+    transform: translate(-400%);
+}
+.sec_text.show{
+    transform: translateX(0);
+}
+/* TESTING TESTING */
+
+
+.gamingPage img{
+    box-shadow: 2px 3px 6px black;
+    margin-top:0%;
+    margin-left:35%;
+    margin-right:35%;
+    padding:5%;
+    height:auto;
+    width:20%;
+    border-radius:10px;
+
+
+}
+
+
+.keyboardPage img{
+    box-shadow: 1px 3px 4px black;
+    height:auto;
+    width:100%;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+
+
+
+
+
+
+
+/* Keyboard page */
+
+.keyboardComms{
+    padding:3%;
+    height:auto;
+    width:100%;
+    justify-content: space-around;
+}
+
+.keyboardComms img{
+    box-shadow: 1px 1px 15px #1e1d1f;
+    border-style:solid;
+    border-color:#1e1d1f;
+    border-radius:15px;
+    margin:3%;
+    height:auto;
+    width:25%;
+    max-width:100%;
+    cursor:pointer;
+}
+
+
+.keyboardPage_bottom{
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
+    color:#F3E8EE;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    align-self:center;
+    background-color:#1e1d1f;
+    border-radius: 15px;
+
+    height:auto;
+    width:20%;
+}
+
+
+
+
+.keyboardLink img{
+    box-shadow: 1px 1px 8px black;
+    margin:5%;
+    background-color:#F3E8EE;
+    border-radius:15px;
+    padding:1%;
+    height:auto;
+    width:70px;
+    max-width: 80%;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+/* References page */
+
+.references{
+    display:flex;
+    justify-content: center;
+    text-decoration:none;
+}
+
+
+.references_text{
+    font-family: 'Montserrat', sans-serif;
+    margin:1%;
+    padding:4%;
+    font-size:300%;
+    color:#2E2C2F;
+    background-color:#FFBF00;
+    border-radius:25px;
+
+    align-self:center;
+}
+
+
+/* footer */
+
+footer{
+    text-shadow: 1px 1px 1px #1e1d1f;
+    margin-top:5%;
+    text-align:center;
+    font-family: 'Fira Sans', Verdana, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* modal stuff */
+
+
+
+/* The Modal (background) */
+.modals {
+  display: none; 
+  position: fixed;  
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+}
+
+/* Modal Content (image) */
+.modal-content {
+    
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* gaming_page stuff */
+
+.vid1{
+    align-self:center;
+    margin:2.5%;
+    margin-bottom:1%;
+}
+.vid1 video{
+    border-style:double;
+    border-color:#1e1d1f;
+    border-radius:12px;
+    box-shadow: 2px 3px 8px black;
+}
+
+.playlistLink{
+    margin-top: 2.5%;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    text-shadow: 0.5px 0.2px 1px black;
+    align-self: center;
+    
+    padding:1%;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ffffff;
+    color:#2E2C2F;
+    border-radius: 10px;
+    height:auto;
+    width:auto;
+}
+
+.playlistLink a:link{
+    text-decoration:none;
+}
+.playlistLink a:visited{
+    text-decoration:none;
+    color:#2E2C2F;
+}
+
+
+/*PHP STUFF*/
+
+
+.justification-div{
+    display:flex;
+    justify-content: center;
+
+}
+.error {
+    color: #FF0000;
+}
+
+.formValidation{
+    box-shadow: 2px 3px 5px black;
+    margin-top:5%;
+    padding:15px;
+
+    border-radius:15px;
+    background-color: #1e1d1f;
+    font-family: 'Montserrat', sans-serif;
+    color:#F3E8EE;
+    text-align: left;
+}

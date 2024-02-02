@@ -37,6 +37,9 @@
 
     
 <?php
+
+
+
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
@@ -140,6 +143,29 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO guests (name, email, website, comment, gender) 
+VALUES ('$name','$email','$website','$comment','$gender')";
+
+if($conn->query($sql) === TRUE) {
+  echo "New record created";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
 ?>
 
 <script src="js/1scripts2.js"></script>

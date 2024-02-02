@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.scss">
+  <title>Von's Personal webpage</title>
+
+
+</head>
+
+
+<body>
+
+<?php
+echo "my first php script";
+echo "<br>";
+
+$x = 10;
+$y = "hello";
+
+echo $x;
+echo "<br>";
+echo $y;
+echo "<br>";
+echo "this is an integer: " . $x . "<br>" . " this is a string: " . $y;
+
+$z = 15;
+echo "<br>" . "variable x + variable z is: " . $x + $z;
+
+$a = $b = $c = 33.33;
+echo "<br>" . $a + $b + $c;
+
+function testFunction()
+{
+  echo "<p>Variable x inside function is: $x</p>"; //error since global variable cannot be used inside here
+}
+  testFunction();
+  echo "<p>Variable x outside function is: $x</p>";
+
+function testFunction2(){
+$d = 5; // local
+echo "<p>Variable d inside function is: $d</p>";
+}
+testFunction2();
+
+echo "<p>Variable d outside function is: $d</p>";
+
+
+// local variable test
+
+function localVarTest(){
+  static $e = 0;
+  echo $e;
+  $e++;
+  echo "<br>";
+  var_dump($e);
+}
+
+localVarTest();
+localVarTest();
+localVarTest();
+
+echo "<br>";
+
+
+class Car {
+  public $color;
+  public $model;
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+  public function message(){
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
+$myCar = new Car("red", "Volvo");
+var_dump($myCar);
+
+echo "<br>";
+$myCar = new Car("blue", "Toyota");
+var_dump($myCar);
+
+echo "<br>";
+$lenTest = "Count Length";
+echo strlen("lenTest");
+echo "<br>";
+echo str_word_count("lenTest");
+echo "<br>";
+echo strpos("$lenTest", "length");
+echo "<br>";
+
+echo strtoupper("lenTest");
+echo "<br>";
+echo strtolower("lenTest");
+echo "<br>";
+echo str_replace("$lenTest", "Hello", $lenTest);
+echo "<br>";
+echo "$lenTest";
+echo "<br>";
+echo strrev($lenTest);
+
+echo "<br>";
+$concatenate = $y . " " . $lenTest;
+echo $concatenate;
+
+echo "<p>Test for escape character, \"illegal\" strings</p>";
+
+echo "<br>";
+echo(rand(10,100));
+echo "<br>";
+define("TESTING", "This is a test phrase for the \"define\" function");
+echo TESTING;
+echo "<br>";
+
+function testfuncDefine(){
+  echo TESTING;
+}
+
+testfuncDefine();
+
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+    
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+      $websiteErr = "Invalid URL";
+    }
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Website: <input type="text" name="website" value="<?php echo $website;?>">
+  <span class="error"><?php echo $websiteErr;?></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+  <span class="error">* <?php echo $genderErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+
+
+
+
+</body>
+</html>

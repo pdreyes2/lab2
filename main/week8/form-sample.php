@@ -147,7 +147,7 @@ echo $gender;
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myDB";
+$dbname = "webprogmi221";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, name, email, website, comment, gender FROM guests";
+$sql = "SELECT id, name, email, website, comment, gender FROM pdreyes_guests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

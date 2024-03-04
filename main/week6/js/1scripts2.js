@@ -132,6 +132,9 @@ const v12 = new Date("2022-03-25");
 Boolean(10>9)
 Boolean(x>y)
 
+let x = 3.14;    // A number with decimals
+let y = 3;       // A number without decimals 
+
 
 
 

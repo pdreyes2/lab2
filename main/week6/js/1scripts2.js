@@ -82,7 +82,7 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
 
 // TEST TEST
 
-const text2 = document.querySelectorAll('.sec_text')
+const text2 = document.querySelectorAll('.sec_text');
 
 window.addEventListener('scroll', checkAnimation)
 

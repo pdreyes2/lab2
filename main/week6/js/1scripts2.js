@@ -105,7 +105,7 @@ function checkAnimation(){
 
 /*
 var v1 = "variable1"
-let v2 = "variable2";
+let v2 = "variable2"
 const v3 = "variable3";
 
 // Numbers:

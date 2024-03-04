@@ -132,8 +132,15 @@ const v12 = new Date("2022-03-25");
 Boolean(10>9)
 Boolean(x>y)
 
-let x = 3.14;    // A number with decimals
-let y = 3;       // A number without decimals 
+let v13 = 3.14;    // A number with decimals
+let v14 = 3;       // A number without decimals 
+
+let v15 = v13 + v14;
+v15 += v14;
+v15 -=v14;
+
+let v16 = (100 + 50) * v14;
+Math.round(v16);
 
 
 

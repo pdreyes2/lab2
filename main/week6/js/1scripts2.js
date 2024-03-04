@@ -103,7 +103,7 @@ function checkAnimation(){
     
 }
 
-
+/*
 var v1 = "variable1";
 let v2 = "variable2";
 const v3 = "variable3";
@@ -155,7 +155,7 @@ let v18 = 100 / 50 * 3;
 if (hour < 18) {
   greeting = "Good day";
 } 
-
+*/
 
 
 

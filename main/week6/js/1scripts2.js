@@ -87,7 +87,7 @@ const text2 = document.querySelectorAll('.sec_text');
 window.addEventListener('scroll', checkAnimation)
 
 function checkAnimation(){
-    const triggerBottom = (window.innerHeight / 1.2)
+    const triggerBottom = (window.innerHeight / 1.2);
 
     text2.forEach(text => {
         const text2Top = text.getBoundingClientRect().top

@@ -142,6 +142,8 @@ v15 -=v14;
 let v16 = (100 + 50) * v14;
 Math.round(v16);
 
+let carname= "Maserati";
+
 
 
 

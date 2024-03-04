@@ -104,5 +104,31 @@ function checkAnimation(){
 }
 
 
+var v1 = "variable1";
+let v2 = "variable2";
+const v3 = "variable3";
+
+// Numbers:
+let v4 = 16;
+let v5 = 7.5;
+
+// Strings:
+let v6 = "Yellow";
+let v7 = "Johnson";
+
+// Booleans
+let v8 = true;
+let v9 = false;
+
+// Object:
+const v10 = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const v11 = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const v12 = new Date("2022-03-25"); 
+
+
 
 

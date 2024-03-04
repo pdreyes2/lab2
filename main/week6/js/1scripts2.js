@@ -129,6 +129,9 @@ const v11 = ["Saab", "Volvo", "BMW"];
 // Date object:
 const v12 = new Date("2022-03-25"); 
 
+Boolean(10>9)
+Boolean(x>y)
+
 
 
 

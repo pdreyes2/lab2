@@ -104,13 +104,7 @@ function checkAnimation(){
 }
 
 /*
-var v1 = "variable1"
-let v2 = "variable2"
-const v3 = "variable3"
 
-// Numbers:
-let v4 = 16;
-let v5 = 7.5;
 
 // Strings:
 let v6 = "Yellow";

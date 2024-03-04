@@ -148,6 +148,14 @@ const carlist = ["maserati","toyota","honda","mitsubishi"];
 
 const v17 = new Date();
 
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+let v18 = 100 / 50 * 3;
+
+if (hour < 18) {
+  greeting = "Good day";
+} 
+
 
 
 

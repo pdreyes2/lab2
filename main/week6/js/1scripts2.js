@@ -12,7 +12,7 @@ function toggleAnimate(elementID, toggleID, value1, value2) {
   // Function for new page button
   function newPageBtn(buttonID, path) {
     document.getElementById(buttonID).addEventListener("click", function () {
-      window.location.href = path;
+      window.location.href = path
     });
   }
 
